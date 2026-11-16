@@ -1,7 +1,7 @@
 #include <cassert>
 #include "dense_layer.h"
 
-const std::vector<float> DenseLayer::infer(const std::vector<float>& input) {
+std::vector<float> DenseLayer::infer(const std::vector<float>& input) const {
   assert(input.size() == input_size_);
   std::vector<float> output(output_size_);
   for (int j = 0; j < output_size_; ++j) {
