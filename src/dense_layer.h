@@ -32,3 +32,5 @@ private:
   std::vector<float> weights_;
   std::vector<float> biases_;
 };
+
+void relu(std::vector<float>& input);
