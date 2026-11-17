@@ -25,3 +25,4 @@ custom cpp rl engine library for self learning
 
 # to do
 learn iostream
+polymorphism via pointer/reference

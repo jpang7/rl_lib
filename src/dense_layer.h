@@ -1,9 +1,10 @@
 #include <cmath>
 #include <iostream>
+#include "layer.h"
 #include <random>
 #include <vector>
 
-class DenseLayer {
+class DenseLayer : public Layer {
 public:
   DenseLayer(int input_size, int output_size)
       : input_size_(input_size),
@@ -18,7 +19,7 @@ public:
             weights_[i] = d(gen);
           }
         }
-  std::vector<float> infer(const std::vector<float> &input) const;
+  std::vector<float> forward(const std::vector<float> &input) const;
   void log_weights() {
     for (float weight : weights_) {
       std::cout << weight << ' ';
