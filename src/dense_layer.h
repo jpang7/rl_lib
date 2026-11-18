@@ -19,7 +19,7 @@ public:
             weights_[i] = d(gen);
           }
         }
-  std::vector<float> forward(const std::vector<float> &input) const;
+  std::vector<float> Forward(const std::vector<float> &input) const;
   void log_weights() {
     for (float weight : weights_) {
       std::cout << weight << ' ';

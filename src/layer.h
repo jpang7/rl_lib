@@ -4,5 +4,5 @@
 class Layer {
 public:
   virtual ~Layer() = default;
-  virtual std::vector<float> forward(const std::vector<float>& input) const = 0;
+  virtual std::vector<float> Forward(const std::vector<float>& input) const = 0;
 };
